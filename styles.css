@@ -1,0 +1,250 @@
+
+*,
+*::before,
+*::after{
+  margin:0;
+  padding:0;
+}
+html{
+  font-size: 100%;
+  font-family: sans-serif;
+}
+body{
+  padding:35px 40px;
+  background:#242D34;
+  display:flex;
+  justify-content: center;
+}
+.black-bg{
+ padding:10px;
+ background:#000000;
+ box-sizing: border-box;
+ width:47%;
+ border-radius: 16px;
+}
+.black-bg .cross-logo{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.black-bg .close{
+ position: relative;
+ right:45%;
+ text-align: center;
+ filter:invert(100%);
+ width:13px;
+ height:13px;
+}
+.black-bg .icon{
+ filter:invert(88%);
+ width:30px;
+}
+.big-t{
+  font-family: sans-serif;
+  padding-top: 30px;
+  filter:invert(5%);
+  margin-left: 140px;
+  color:white;
+}
+/* Start styling login buttonds */
+.buttons{
+  padding-top: 20px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin:10px 0;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  font-weight: 600;
+  border-radius: 25px;
+  width:48%;
+  color:#34393D;
+  background-color:#FFFFFF;
+  padding:9px;
+}
+#hov:hover{
+  background-color: #E6E6E6;
+  transition: ease 0.5s;
+}
+ img[id="icon"]{
+  padding:0 10px 0 0;
+  width:18px;
+}
+/* End styling login buttonds */
+
+/* Start styling OR div */
+.hr-or{
+  margin-top:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight:500;
+  color:#FFFFFF;
+}
+
+hr{
+ width:22%;
+ height: 1px;
+ border:none;
+ background-color: #333639;
+}
+#f{
+  margin-right: 10px;
+}
+#l{
+  margin-left: 10px;
+}
+/* End styling OR div */
+
+/*Start styling input b-b-in div */
+.b-b-in{
+  margin:12px 0;
+  display:flex;
+  justify-content: center;
+}
+#i-black{
+  width:46%;
+  padding:20px 10px 20px 10px;
+  background-color: #000;
+  border:2px #333639;
+  border-radius:5px;
+  border-style:ridge;
+}
+#i-black::placeholder{
+  font-weight: 400;
+  font-size:1rem;
+}
+/*End styling input  b-b-in div */
+
+/* Start styling login buttonds */
+.butn{
+  padding:2px;
+}
+.buttons #bt-n{
+  font-size: 1rem;
+  font-weight: bold;
+  color:#34393D;
+}
+.buttons #bt-n1{
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #000;
+  color:#FFFFFF;
+  border:1px solid #536471;
+}
+#bt-n:hover{
+  background-color:#E6E6E6;
+  transition: ease 0.5s;
+}
+#bt-n1:hover{
+  background-color: #252525;
+  transition: ease 0.5s;
+}
+/* End styling login buttonds */
+
+/* Start Ending text styling*/
+.footer{
+  padding:33px;
+  margin-left:19%;
+  font-size: 1rem;
+  font-weight: 500;
+  color:#565A5E;
+}
+.footer .foot{
+  color:#1D9BF0;
+  text-decoration: none;
+}
+.foot:hover{
+  text-decoration:underline;
+}
+/* End Ending text styling*/
+
+/*Start Responsive  */
+@media (max-width:1024px){
+  .black-bg{
+        width: 65%;
+  }
+}
+
+@media (max-width:768px){
+  .black-bg{
+        width: 80%;
+  }
+  .footer{
+        margin-left: 22%;
+  }
+}
+@media (max-width:425px){
+  .black-bg .close{
+        right: 40%;
+  }
+  .big-t{
+        margin-left: 40px;
+  }
+  .black-bg{
+        width: 100%;
+  }
+  .btn{
+        width: 60%;
+  }
+  hr{
+        width: 27%;
+  }
+
+  #i-black {
+        width: 60%;
+  }
+  .footer {
+        margin-left: 5%;
+  }
+}
+@media (max-width:375px){
+  .black-bg{
+        width: 100%;
+  }
+  .big-t {
+        margin-left: 10px;
+  }
+  #i-black::placeholder {
+       font-size: 0.8rem;
+  }
+  .footer{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width:320px){
+  .black-bg{
+        width: 100%;
+  }
+  .big-t{
+        margin-left: 12px;
+        font-size: 1.5rem;
+  }
+  .btn{
+        width: 75%;
+  }
+  hr {
+        width: 33%;
+  }
+  #i-black{
+        padding: 12px 25px 12px 25px;
+  }
+  #i-black::placeholder{
+        font-weight:bold;
+        font-size: 0.6rem;
+  }
+  .footer {
+        font-size: 0.5rem;
+        font-weight: 900;
+  }
+}
+/*End Responsive  */
